@@ -5,6 +5,18 @@
       "email": "demo@demo",
       "password": "demo",
       "id": "1"
+    },
+    {
+      "name": "test",
+      "email": "test@mail.ru",
+      "password": "test",
+      "id": "6mcbkslg57fwvl"
+    },
+    {
+      "name": "demo",
+      "email": "demo@mail.ru",
+      "password": "demo",
+      "id": "6mcf8olg57hvs7"
     }
   ],
   "accounts": [
@@ -22,6 +34,21 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "1",
+      "user_id": "6mcbkslg57fwvl",
+      "id": "2rk1e304lg68e7b5"
+    },
+    {
+      "name": "2",
+      "user_id": "6mcbkslg57fwvl",
+      "id": "6mcl34lg6hqj26"
+    },
+    {
+      "name": "3",
+      "user_id": "6mcbkslg57fwvl",
+      "id": "6mc9cklg6hqlll"
     }
   ],
   "transactions": [
@@ -159,6 +186,24 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "6mc4jclg6dpc2d",
+      "type": "income",
+      "name": "Иван Памиков",
+      "sum": 100000,
+      "account_id": "2rk1e304lg68e7b5",
+      "user_id": "6mcbkslg57fwvl",
+      "created_at": "2023-04-07T10:02:57.492Z"
+    },
+    {
+      "id": "6mcbvslg6ivx2h",
+      "type": "income",
+      "name": "Обучение",
+      "sum": 90000,
+      "account_id": "2rk1e304lg68e7b5",
+      "user_id": "6mcbkslg57fwvl",
+      "created_at": "2023-04-07T12:28:02.728Z"
     }
   ]
 }

@@ -13,7 +13,7 @@ class Modal {
    * */
   constructor(element){
     if(!element) {
-      throw new Error('Element is empty!')
+      throw new Error('Element is empty!');
     }
     this.element = element;
     this.registerEvents();
@@ -27,8 +27,7 @@ class Modal {
   registerEvents() {
     this.element.addEventListener('click', (event) => {
       let target = event.target;
-      event.preventEventDefault();
-      if(target.hasAttribute('dismiss')) {
+      if(target.dataset.dismiss || target.closest('.close')) {
         this.onClose(event);
       }
     })
@@ -38,8 +37,8 @@ class Modal {
    * Срабатывает после нажатия на элементы, закрывающие окно.
    * Закрывает текущее окно (Modal.close())
    * */
-  onClose(e) {
-    e.preventEventDefault();
+  onClose(event) {
+    event.preventDefault();
     this.close()
   }
   /**
